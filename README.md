@@ -1,5 +1,7 @@
-### Hi there 👋
-🌱 I’m currently attending SLCC pursuing an Associate's in Computer Science. <br>
+### Hey there! 
+
+☀️ My name is Paola. <br>
+🌱 I’m currently a full-time student attending SLCC pursuing an Associate's in Computer Science. <br>
 📫 How to reach me: paolaleyva.slc@gmail.com
 <!--
 **paolaleyva/paolaleyva** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
