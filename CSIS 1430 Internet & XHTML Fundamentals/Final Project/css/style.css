@@ -1,0 +1,310 @@
+
+
+ *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html body {
+    background-color: #cdb4db;
+    font-family: monospace;
+
+}
+
+/******** paragraph style on all pages ********/
+p {
+    margin: 0 auto;
+    text-align: center;
+    width: 800px;
+}
+
+/******** header and intro style ********/
+div.header {
+    position: relative; /* Add position relative for stacking context */
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color:#cdb4db;
+    width: auto;
+}
+
+div.header-intro {
+    text-align: center;
+    padding: 10px;
+    font-family: monospace;
+    font-weight: 600;
+}
+
+/*********** sub header animation **************/
+
+.container{
+    width: 246px;
+    overflow: hidden;
+}
+.container .text{
+    position: relative;
+    color: black;
+    font-size: 35px;
+    font-weight: 600;
+}
+.container .text.first-text{
+    color: black;
+}
+.text.sec-text:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 40px;;
+    width: 100%;
+    background-color: #cdb4db;
+    border-left: 2px solid black;
+    animation: animate 4s steps(12) infinite;
+}
+@keyframes animate{
+    40%, 60%{
+        left: calc(100% + 4px);
+    }
+    100%{
+        left: 0%;
+    }
+}
+
+/******** project overview header ********/
+header.projects{
+    text-align: center;
+    margin: 20px auto;
+    max-width: 968px;
+    padding: 20px 0;
+}
+
+div.header::after {
+    content: '';
+    display: block;
+    height: 4px;
+    margin-bottom: 20px;
+    width: 60px;
+}
+
+div.header .subtitle {
+    margin-bottom: 50px;
+    width: 700px;
+}
+
+main {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 968px;
+    overflow: hidden;
+}
+
+.card {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    position: relative;
+    width: 300px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.card-item {
+    color: white;
+}
+
+.card.card-1 {
+    background: url("../img/youtube.png") no-repeat center;
+    background-size: cover;
+    height: 300px;
+}
+
+.card.card-2 {
+    background: url("../img/superheroes.png") no-repeat center;
+    background-size: cover;
+    height: 300px;
+}
+
+.card.card-3 {
+    background: url("../img/littleBoxes.png") no-repeat center;
+    background-size: cover;
+    height: 300px;
+}
+
+.card.card-4 {
+    background: url("../img/horizontalMenu.png") no-repeat center;
+    background-size: cover;
+    height: 300px;
+}
+
+.card.card-5 {
+    background: url("../img/midterm.png") no-repeat center;
+    background-size: cover;
+    height: 300px;
+}
+
+.card.card-6 {
+    background: url("../img/photoshop.png") no-repeat center;
+    background-size: cover;
+    height: 300px;
+}
+
+.card.card-7 {
+    background: url("../img/happybday.png") no-repeat center;
+    background-size: cover;
+    height: 300px;
+}
+
+.card.card-8 {
+    background: url("../img/lottery.png") no-repeat center;
+    background-size: cover;
+    height: 300px;
+}
+
+.card.card-9 {
+    background: url("../img/madlibs.png") no-repeat center;
+    background-size: cover;
+    height: 300px;
+}
+
+.card.card-10 {
+    background: url("../img/pizzaStrap.png") no-repeat center;
+    background-size: cover;
+    height: 300px;
+}
+
+.card.card-11 {
+    background: url("../img/ttt.png") no-repeat center;
+    background-size: cover;
+    height: 300px;
+}
+
+.card::after {
+    background: rgba(0, 0, 0, 0.7);
+    content: '';
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    transition: all 300ms ease-in;
+    width: 100%;
+}
+
+.card:hover::after,
+.card:hover .project-title,
+.card:hover .project-subtitle {
+    opacity: 1;
+}
+
+.card .project-title {
+    text-align: center;
+    color: white;
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    opacity: 0;
+    padding: 10px 0;
+    z-index: 10;
+}
+
+.card .project-subtitle {
+    color: white;
+    display: block;
+    font-size: 14px;
+    font-weight: 300;
+    opacity: 0;
+    padding: 10px 0;
+    z-index: 10;
+}
+
+/**** reflection *********/
+
+.reflection {
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+h4 {
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+
+/***************** about me header **************/
+
+.aboutMeIntro {
+    position: relative; /* Add position relative for stacking context */
+    padding: 30px 0;
+    background-color:#cdb4db;
+    text-align: center; /* Center the text */
+}
+
+h1.aboutMe {
+    text-align: center;
+    font-family: monospace;
+    flex: 1 1 100%;
+}
+
+/**** socials *****/
+
+.contactBtns {
+    text-align: center;
+  }
+  
+  #github,
+  #linkedin {
+    width: auto;
+    height: auto;
+    font-size: 15px;
+    text-align: center;
+    background: rosybrown;
+    color: black;
+    border: transparent;
+    margin: 5px; /* Add margin for spacing between buttons */
+    cursor: pointer;
+  }
+
+/************* Quote Generator **************/
+
+.randomQuote button {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.quotesOutput {
+    text-align: center;
+    background: #f7ede2;
+    padding: 20px;
+    min-height: 50px;
+    margin-bottom: 20px;
+    max-width: auto;
+    margin: 0 auto;
+}
+button#nextQuoteButton {
+    width: auto;
+    height: auto;
+    font-size: 15px;
+    text-align: center;
+    background: transparent;
+    color: black;
+    border: none;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e8e8e4;
+}
+
+
+
+p#generatedQuote {
+    font-size: 16px;
+    font-weight: 500;
+}
